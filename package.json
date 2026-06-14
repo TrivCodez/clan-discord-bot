@@ -1,0 +1,41 @@
+{
+  "name": "clan-discord-bot",
+  "version": "1.0.0",
+  "description": "Production-grade Discord clan bot with 600+ commands",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "deploy": "node dist/commands/deploy.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "clan",
+    "discordjs",
+    "slash-commands"
+  ],
+  "author": "TrivCodez",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "@discordjs/rest": "^2.2.0",
+    "discord-api-types": "^0.37.67"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
