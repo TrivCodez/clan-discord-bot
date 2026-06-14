@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "Production-grade Discord clan bot with 600+ commands",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
-    "deploy": "node dist/commands/deploy.js"
+    "deploy": "node dist/commands/deploy.js",
+    "generate": "ts-node src/commands/generator/generateCommands.ts"
   },
   "keywords": [
     "discord",
